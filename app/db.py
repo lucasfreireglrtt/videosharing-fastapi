@@ -8,8 +8,7 @@ from sqlalchemy.orm import declarative_base, relationship
 
 DATABASE_URL = "sqlite+aiosqlite:///./test.db"
 
-class Base(declarative_base):
-    pass
+Base = declarative_base()
 
 class Post(Base):
     __tablename__ = "posts"
